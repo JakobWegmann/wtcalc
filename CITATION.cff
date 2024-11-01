@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+authors:
+- family-names: "Wegmann"
+  given-names: "Jakob"
+title: "Withholding tax calculator"
+version: 1.0
+date-released: 2024-09-30
+url: "https://github.com/jakobwegmann/wtcalc"
