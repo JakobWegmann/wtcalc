@@ -1,4 +1,4 @@
-![StataMin](https://img.shields.io/badge/stata-2017-blue) ![issues](https://img.shields.io/github/issues/Jakob Wegmann/wtcalc) ![license](https://img.shields.io/github/license/Jakob Wegmann/wtcalc) ![Stars](https://img.shields.io/github/stars/Jakob Wegmann/wtcalc) ![version](https://img.shields.io/github/v/release/Jakob Wegmann/wtcalc) ![release](https://img.shields.io/github/release-date/Jakob Wegmann/wtcalc)
+![StataMin](https://img.shields.io/badge/stata-2017-blue) ![issues](https://img.shields.io/github/issues/JakobWegmann/wtcalc) ![license](https://img.shields.io/github/license/JakobWegmann/wtcalc) ![Stars](https://img.shields.io/github/stars/JakobWegmann/wtcalc) ![version](https://img.shields.io/github/v/release/JakobWegmann/wtcalc) ![release](https://img.shields.io/github/release-date/JakobWegmann/wtcalc)
 
 
 [Project](#project) | [Usage](#usage) | [Examples](#examples) | [Tests](#tests) | [Special thanks](#special-thanks) | [Feedback](#feedback) 
