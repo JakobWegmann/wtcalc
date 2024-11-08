@@ -1,5 +1,6 @@
 /* Tests for Kurzarbeit. Since 2021 BA offers tables with the actual amount of
    Kurzarbeitergeld, test for these are not yet implemented */
+
    
 clear all
 // Create do files with year dependent globals

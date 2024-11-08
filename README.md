@@ -198,8 +198,10 @@ unemp_benefit,stkl(3) has_child("Yes")
 
 [Julian Budde](https://github.com/buddejul) programmed the excellent `stata_test` that allows, similar to [pytest](https://docs.pytest.org/en/stable/), to systematically test code. The core idea is that the user provides for various inputs the expected outputs, so that an error is raised when the calculated output is not equal to the expected output. 
 
-So when running 
 
+Transfer the ado files `stata_test.ado`, `stata_test_collect.ado` and `stata_test_drop.ado` to your ado folder. 
+
+Then run
 ```stata
 global dir `c(pwd)'
 stata_test, dir(${dir}/code/tests) 
