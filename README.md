@@ -26,7 +26,7 @@ Notes:
 * The naming of the functions follows, as far as possible, the naming conventions of the [calculation guide](https://www.bundesfinanzministerium.de/Web/DE/Themen/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/programmablaufplan.html) provided by the ministry of finance, so they are not self-explanatory. Variable labels always explain the underlying concepts. 
 * All calculations follow the exact rounding rules so that the results can be compared to official tabulations. By law, not only the final result is rounded but there are also many rounding steps in previous steps of the calculation. Therefore, calculation marginal incentives requires some caution.
 * For the calculation if withholding taxes, severance payments and the reduced rate for individuals older than 64 (§ 24a EStG) are not implemented.
-* For parental leave benefits, the calculation for lower incomes is inprecise as the rules for Mini- and Midijobs is not implemented.
+* For parental leave benefits, the calculation for lower incomes is imprecise as the rules for Mini- and Midijobs is not implemented.
 
 
 ## Usage
@@ -54,7 +54,7 @@ Additional programs provide further functionalities, in particular helpful are:
 
 ## Examples
 
-The code is written to directly calculate taxes with inputsn provided in a data set. For example, the German Taxpayer Panel includes all information as separate variables. Therefore, to illustrate the functionality of the calculator, the examples create sample data sets with one household. Typically, the required input variables would be obtained from the real data.
+The code is written to directly calculate taxes with inputs provided in a data set. For example, the German Taxpayer Panel includes all information as separate variables. Therefore, to illustrate the functionality of the calculator, the examples create sample data sets with one household. Typically, the required input variables would be obtained from the real data.
 
 ### Calculation of withholding taxes
 
@@ -171,9 +171,9 @@ LST
 ```
 
 
-### Calculation of wage replacment
+### Calculation of wage replacement
 
-For wage replacements, most of the imput variables are defined by law. For example, unemployment benefit does only depend on the reference income ("Bruttoentgelt"), the withholding tax class and an indicator whether a child lives in the household. So the following code suffices:
+For wage replacements, most of the input variables are defined by law so that less input is required. For example, unemployment benefit does only depend on the reference income ("Bruttoentgelt"), the withholding tax class and an indicator whether a child lives in the household. So the following code suffices:
 
 ```stata
 clear 
@@ -201,13 +201,14 @@ unemp_benefit,stkl(3) has_child("Yes")
 
 Transfer the ado files `stata_test.ado`, `stata_test_collect.ado` and `stata_test_drop.ado` to your ado folder. 
 
-Then run
+Then with 
+
 ```stata
 global dir `c(pwd)'
 stata_test, dir(${dir}/code/tests) 
 ```
 
-all tests are run and it is ensured that the calculation of withholding taxes and wage replacement is correct for all years that test data is available.
+all tests are run and it is ensured that the calculation of withholding taxes and short-time work is correct for all years that test data is available.
 
 For unemployment benefits and parental leave benefits no official test data is available. However, the calculation of unemployment benefits was excessively tested on admin data. 
 
