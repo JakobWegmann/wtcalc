@@ -16,7 +16,7 @@
 The repository includes code to calculate for Germany
 * Withholding taxes for all 7 withholding tax classes (2005 to 2024)
 * Unemployment benefits (2005 to 2024)
-* Short time work allowances (2005 to 2024)
+* Short-time work allowances (2005 to 2024)
 * Parental leave benefits (2007 to 2024)
 
 
@@ -49,7 +49,7 @@ Additional programs provide further functionalities, in particular helpful are:
 
 * `unemp_benefit`: Calculates unemployment benefits ("Arbeitslosengeld I") on a daily basis
 * `parental_benefit`: Calculates parental leave benefits on a monthly basis
-* `short_time_allowance`: Calculates short time work allowances on a monthly basis
+* `short_time_allowance`: Calculates short-time work allowances on a monthly basis
 
 
 ## Examples
